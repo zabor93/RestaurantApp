@@ -3,7 +3,8 @@ package pl.javastart.takeawayapp.order;
 public enum OrderStatus {
     NEW,
     INPROGRESS,
-    COMPLETE;
+    COMPLETE,
+    ARCHIVE;
 
     static OrderStatus nextStatus(OrderStatus orderStatus) {
         if (orderStatus == NEW) {
