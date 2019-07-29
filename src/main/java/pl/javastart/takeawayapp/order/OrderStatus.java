@@ -4,7 +4,8 @@ public enum OrderStatus {
     NEW,
     INPROGRESS,
     COMPLETE,
-    ARCHIVE;
+    ARCHIVE,
+    TEST;
 
     static OrderStatus nextStatus(OrderStatus orderStatus) {
         if (orderStatus == NEW) {
