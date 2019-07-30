@@ -1,0 +1,37 @@
+.home-jumbo {
+    background: url('../img/jumbo-back.png') center;
+}
+.home-jumbo2 {
+    background: url('../img/jumbo-back.png') center;
+}
+.home-jumbo3{
+     background: url('../img/jumbo-back.png') center;
+ }
+.home-jumbo4 {
+      background: url('../img/jumbo-back.png') center;
+  }
+
+
+.media-body {
+    margin-left: 10px;
+}
+
+.carousel-fullscreen .carousel-inner .item {
+    height: 100px;
+    width: 100px;
+    background-position: center center;
+}
+
+.space{
+    align-content: center;
+    padding: 10px;
+    height: 10px;
+    text-align: center;
+
+}
+
+.carousel-inner > .carousel-item > img {
+    width:240px;
+    height:360px;
+    text-align: center;
+}

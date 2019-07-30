@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 @Entity
 public class Item {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -14,6 +13,14 @@ public class Item {
     @Column(length = 1024)
     private String description;
     private String imgUrl;
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
 
     public Long getId() {
         return id;
@@ -53,13 +60,5 @@ public class Item {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getImgUrl() {
-        return imgUrl;
-    }
-
-    public void setImgUrl(String imgUrl) {
-        this.imgUrl = imgUrl;
     }
 }

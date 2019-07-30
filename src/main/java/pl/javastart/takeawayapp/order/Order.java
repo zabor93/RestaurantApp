@@ -1,5 +1,6 @@
 package pl.javastart.takeawayapp.order;
 
+
 import pl.javastart.takeawayapp.item.Item;
 
 import javax.persistence.*;
@@ -7,14 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "client_order")
+@Table(name = "order2")
 public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @ManyToMany
-    @JoinTable(name = "order_item",
+    @JoinTable(name = "order_item2",
             joinColumns = @JoinColumn(name = "order_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "item_id", referencedColumnName = "id")
     )
